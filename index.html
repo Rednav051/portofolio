@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio | Mahasiswa</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">REDNAV TECHNOLOGY<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-tag">👋 Halo, Saya</p>
+      <h1 class="hero-name">Ivander <span>Wowor</span></h1>
+      <p class="hero-sub">Informatics Engineering</p>
+      <p class="hero-desc">Seorang mahasiswa yang passionate di bidang web development dan desain UI/UX. Selalu belajar hal baru setiap hari.</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-outline">Lihat Proyek</a>
+        <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <div class="avatar-box">
+        <img src="vandegaul.jpg.jpeg" alt="foto-saya" class="avatar-inner">
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <h2 class="section-title">About <span>Me</span></h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>Nama saya <strong>Christian Ivander Wowor</strong>, mahasiswa semester 4 Jurusan Teknik Informatika di Politeknik Negeri Manado. Saya memiliki ketertarikan besar pada dunia teknologi, terutama web development dan pemrograman.</p>
+        <p>Di luar kuliah, saya aktif mempelajari coding, dan terus mengembangkan skill melalui proyek-proyek pribadi.</p>
+        <div class="about-info">
+          <div class="info-item"><span class="label">📚 Jurusan</span><span>Teknik Informatika</span></div>
+          <div class="info-item"><span class="label">🏫 Campus</span><span>Politeknik Negeri Manado</span></div>
+          <div class="info-item"><span class="label">📅 Semester</span><span>4 (2024-sekarang)</span></div>
+          <div class="info-item"><span class="label">📍 Lokasi</span><span>Manado, Indonesia</span></div>
+        </div>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card"><div class="stat-num" data-target="10">7</div><div class="stat-label">Proyek Selesai</div></div>
+        <div class="stat-card"><div class="stat-num" data-target="5">8</div><div class="stat-label">Teknologi Dipelajari</div></div>
+        <div class="stat-card"><div class="stat-num" data-target="3">2</div><div class="stat-label">Penghargaan</div></div>
+        <div class="stat-card"><div class="stat-num" data-target="2">1</div><div class="stat-label">Tahun Belajar</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-dark" id="skills">
+    <h2 class="section-title">My <span>Skills</span></h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon">🌐</div>
+        <h3>HTML & CSS</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        <span>90%</span>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">⚡</div>
+        <h3>JavaScript</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+        <span>75%</span>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🐍</div>
+        <h3>Python</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+        <span>60%</span>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🗄️</div>
+        <h3>MySQL</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+        <span>75%</span>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🎨</div>
+        <h3>UI/UX Design</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
+        <span>55%</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <h2 class="section-title">My <span>Projects</span></h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-tag">Web</div>
+        <h3>Website Keluarga</h3>
+        <p>Bisa digunakan untuk perkenalan keluarga dan menyimpan sebuah kenangan melalui web.</p>
+        <div class="project-techs">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+        <a href="https://wowor-lumingkewas.netlify.app/" class="btn btn-sm">Lihat →</a>
+      </div>
+      <div class="project-card">
+        <div class="project-tag">Web</div>
+        <h3>Perpustakaan</h3>
+        <p>Website yang dapat digunakan untuk mengontrol database perpustakaan.</p>
+        <div class="project-techs">
+          <span>PHP</span><span>JS</span><span>SQL</span>
+        </div>
+        <a href="https://perpustakaan-rednav.up.railway.app/" class="btn btn-sm">Lihat →</a>
+      </div>
+      <div class="project-card">
+        <div class="project-tag">Server Controler</div>
+        <h3>Sistem Berbasis IoT</h3>
+        <p>Aplikasi sederhana berbasis Iot yang dapat mengontrol suatu perangkat sistem.</p>
+        <div class="project-techs">
+          <span>C/C++</span><span>JSON</span><span>SQL</span>
+        </div>
+        <a href="https://wokwi.com/projects/457191071202605057" class="btn btn-sm">Lihat →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-dark" id="contact">
+    <h2 class="section-title">Contact <span>Me</span></h2>
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <p>Saya masih banyak belajar, tapi selalu terbuka buat kolaborasi, diskusi, atau sekadar kenalan sesama anak IT. Jangan lupa ya</p>
+        <div class="contact-links">
+          <a href="mailto:christian.wowor051@gmail.com" class="contact-item">📧 Gmail</a>
+          <a href="https://github.com/Rednav051" class="contact-item">🐙 GitHub</a>
+          <a href="https://www.instagram.com/vanderwowor_/" class="contact-item">📸 Instagram</a>
+        </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 <span>REDNAV TECHNOLOGY</span>. Awas copyright ee.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
