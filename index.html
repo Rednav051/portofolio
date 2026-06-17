@@ -188,12 +188,12 @@
           <a href="https://www.instagram.com/vanderwowor_/" target="_blank" class="contact-item">📸 Instagram</a>
         </div>
       </div>
-      <form class="contact-form" id="contactForm">
-        <input type="text" placeholder="Nama kamu" required />
-        <input type="email" placeholder="Email kamu" required />
-        <textarea rows="5" placeholder="Pesan kamu..."></textarea>
-        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
-      </form>
+      <div class="contact-form">
+        <input type="text" id="inputNama" placeholder="Nama kamu" />
+        <input type="email" id="inputEmail" placeholder="Email kamu" />
+        <textarea id="inputPesan" rows="5" placeholder="Pesan kamu..."></textarea>
+        <a id="btnWA" href="#" target="_blank" class="btn btn-primary" onclick="kirimWA(event)">Kirim Pesan</a>
+      </div>
     </div>
   </section>
 

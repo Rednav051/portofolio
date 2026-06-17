@@ -218,26 +218,21 @@ backToTop.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// ===== CONTACT FORM =====
-const contactForm = document.getElementById('contactForm');
-contactForm.addEventListener('submit', (e) => {
-  e.preventDefault();
+// ===== CONTACT FORM - WHATSAPP =====
+function kirimWA(e) {
+  const nama = document.getElementById('inputNama').value.trim();
+  const email = document.getElementById('inputEmail').value.trim();
+  const pesan = document.getElementById('inputPesan').value.trim();
 
-  const nama = contactForm.querySelector('input[type="text"]').value;
-  const email = contactForm.querySelector('input[type="email"]').value;
-  const pesan = contactForm.querySelector('textarea').value;
+  if (!nama || !pesan) {
+    e.preventDefault();
+    alert('Nama dan pesan wajib diisi!');
+    return;
+  }
 
   const nomorWA = '6282395334429';
   const teks = 'Halo Ivander! 👋\n\nNama: ' + nama + '\nEmail: ' + email + '\n\nPesan:\n' + pesan;
   const url = 'https://wa.me/' + nomorWA + '?text=' + encodeURIComponent(teks);
 
-  const a = document.createElement('a');
-  a.href = url;
-  a.target = '_blank';
-  a.rel = 'noopener';
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-
-  contactForm.reset();
-});
+  document.getElementById('btnWA').href = url;
+}
