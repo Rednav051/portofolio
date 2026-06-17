@@ -228,9 +228,16 @@ contactForm.addEventListener('submit', (e) => {
   const pesan = contactForm.querySelector('textarea').value;
 
   const nomorWA = '6282395334429';
-  const teks = `Halo Ivander! 👋\n\nNama: ${nama}\nEmail: ${email}\n\nPesan:\n${pesan}`;
-  const url = `https://wa.me/${nomorWA}?text=${encodeURIComponent(teks)}`;
+  const teks = 'Halo Ivander! 👋\n\nNama: ' + nama + '\nEmail: ' + email + '\n\nPesan:\n' + pesan;
+  const url = 'https://wa.me/' + nomorWA + '?text=' + encodeURIComponent(teks);
 
-  window.open(url, '_blank');
+  const a = document.createElement('a');
+  a.href = url;
+  a.target = '_blank';
+  a.rel = 'noopener';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+
   contactForm.reset();
 });
